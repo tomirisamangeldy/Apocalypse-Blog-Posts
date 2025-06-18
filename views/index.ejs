@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="wrapper scanlines">
+<p class="meta glitch-soft">[ SYSTEM ONLINE · SIGNAL STRENGTH: 67% · DAY 149 SINCE COLLAPSE ]</p>
+    <div class="main-screen">
+        <h1 class="glitch-soft">APOCALYPSE</h1>
+        <h3 class="glitch-soft">BLOG POSTS</h3>
+        <hr>
+        <p class="glitch-soft">The world as we knew it is gone. Cities lie in ruin, the skies are silent, and time is measured in days since collapse.
+This is your space to document the end — your thoughts, your warnings, your memories. Whether you’re alone in the wastes or holed up in a shelter, your voice matters.</p>
+<p class="glitch-soft"><strong>Log your survival. Share your story. Leave a trace.</strong></p>
+        <hr>
+        <form class="glitch-soft" action="/newPost" method="get">
+        <input class="typewriter" type="submit" value=">ADD NEW STATUS REPORT">
+        </form>
+        <form  class="glitch-soft" action="/logs" method="get">
+        <input class="typewriter" type="submit" value=">VIEW SURVIVAL LOGS">
+        </form>
+    </div>
+    </div>
+
+<%- include("partials/footer.ejs") %>

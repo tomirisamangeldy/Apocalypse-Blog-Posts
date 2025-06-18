@@ -1,0 +1,19 @@
+<div class="post-body glitch-soft">
+    <div class="post-page ">
+<div class="head-info">
+    <p>USER ID<%= post.userID %></p>
+    <p><%= post.date %> <%=post.time%></p>
+</div>
+<hr class="hr-log"></hr>
+<div class="post-info">
+    <h3 class="post-info-title" style="text-align: left;"><%= post.title %></h3>
+    <p class="status-info-p"><%= post.status %></p>
+    <p class="post-info-body"><%= post.body %></p>
+</div>
+<hr class="hr-log"></hr>
+<div class="edit-info">
+    <form action="delete" method="post"><input type="hidden" name="postID" value="<%= post.postID %>"><button type="submit"><i class="fa-solid fa-trash"></i></button></form>
+    <form action="edit" method="post"><input type="hidden" name="postID" value="<%= post.postID %>"><button type="submit"><i class="fa-solid fa-pen"></i></button></form>
+</div>
+    </div>
+</div>

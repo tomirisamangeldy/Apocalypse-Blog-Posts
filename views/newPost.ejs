@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+<div class="scanlines">
+<div class="new-post-body">
+    <div class="new-post-page">
+    <div class="top glitch-soft">
+        <p>USER ID<%= Math.floor(Math.random() * (99999999 - 10000001 + 1)) + 10000001 %></p>
+        <p class="top-date"><%= new Date().toLocaleDateString() %></p>
+    </div>
+    <form action="/create" method="post" class="post-form">
+        <textarea type="create" name="title" class="title post glitch-soft" placeholder="Title" rows="1"></textarea>
+        <textarea type="create" name="body" class="body post glitch-soft" placeholder="Enter log entry..."></textarea>
+        <div class="status glitch-soft">
+            <input type="button" value="💪Healthy" class="stat-btn">
+            <input type="button" value="😎Stable" class="stat-btn">
+            <input type="button" value="🤕Injured" class="stat-btn">
+            <input type="button" value="😮‍💨Recovering" class="stat-btn">
+            <input type="button" value="😵‍💫Exhausted" class="stat-btn">
+            <input type="button" value="🤢Sick" class="stat-btn">
+            <input type="button" value="🥶Cold" class="stat-btn">
+            <input type="hidden" name="status" id="statusField">
+        </div>
+        <hr class="hr-post">
+        <div class="bottom glitch-soft">
+            <a href="/logs"><input type="button" value="Close" class="post close"></a>
+            <input type="submit" value="Save and update" class="post save">
+        </div>
+    </form>
+</div>
+</div>
+</div>
+<%- include("partials/footer.ejs") %>
+
+<!-- new Date().toLocaleTimeString() -->

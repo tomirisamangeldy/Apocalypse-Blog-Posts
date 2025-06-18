@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+<div class="scanlines">
+    <div class="log-body glitch-soft">
+    <h3>Your Logs</h3>
+<!-- THE TEMPLATES GO HERE -->
+<% posts.forEach(post => { %>
+  <%- include('partials/post', { post }) %>
+<% }) %>
+
+</div>
+<div class="create-button ">
+        <a href="/newPost"><input type="button" value="ADD NEW LOG"></a>
+    </div>
+</div>
+<%- include("partials/footer.ejs") %>

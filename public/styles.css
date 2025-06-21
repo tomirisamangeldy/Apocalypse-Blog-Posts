@@ -508,7 +508,7 @@ input {
   width: 100%;
 }
 .post-body{
-  width: 100%;
+  width: auto;
 }
 .edit-info form i{
   font-size: 0.7rem;

@@ -466,6 +466,13 @@ i{
 }
 
 @media only screen and (max-width: 586px) {
+   body {
+  background-color: #0D0D0D;
+  background-image: none;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #80ffb0;
+}
   .wrapper{
   margin: 10px auto 50px;
 }
@@ -512,6 +519,13 @@ input {
 }
 }
 @media only screen and (max-width: 410px) {
+   body {
+  background-color: #0D0D0D;
+  background-image: none;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #80ffb0;
+}
   .meta {
   font-size: 0.4rem;
 }
